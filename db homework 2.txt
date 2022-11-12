@@ -1,0 +1,19 @@
+db homework no2:
+1. there is a redundant primary key,
+we have an id of a costumer therefore we dont need another integer primary key.
+also, there is no need to save the name of the costumer inside this table.
+there should be another table with costumer id and his matching name.
+There is a multi value attribute which is 'pusrcheses', should be in a different table aswell.
+2. insertion anomaly - when inserting a new purchase.
+ you can enter the same id with a different name for example.
+ update anomaly - you can update 
+ 3.
+CREATE TABLE PURCHASES (customerId INTEGER, purchase_id INTEGER, PRIMARY KEY (costumerId, purchase_id)
+CREATE TABLE COSTUMERS (PRIMARY KEY customerId INTEGER, COSTUMER_name TEXT NOT NULL)
+CREATE TABLE ITEMS (PRIMARY KEY ID INTEGER, name TEXT NOT NULL);
+
+4. MULTI VALUE ATTRIBUTE 'PURCHESES' , and redundant primary key id
+
+
+
+
